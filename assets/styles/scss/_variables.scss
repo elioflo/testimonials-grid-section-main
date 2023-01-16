@@ -1,0 +1,16 @@
+:root {
+  --primary-moderate-violet: hsl(263, 55%, 52%);
+  --primary-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --primary-very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --primary-white: hsl(0, 0%, 100%);
+
+  --neutral-light-gray: hsl(0, 0%, 81%);
+  --neutral-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+$min-tablet: 426px;
+$min-laptop: 769px;
+$min-desktop: 1025px;
+$tablet: "(min-width: #{$min-tablet})";
+$laptop: "(min-width: #{$min-laptop})";
+$desktop: "(min-width: #{$min-desktop})";

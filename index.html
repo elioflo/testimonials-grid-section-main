@@ -5,41 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <script type="importmap">
-    {
-      "imports": {
-        "lit": "https://ga.jspm.io/npm:lit@2.6.1/index.js"
-      },
-      "scopes": {
-        "https://ga.jspm.io/": {
-          "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.1/reactive-element.js",
-          "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.2.2/lit-element.js",
-          "lit-html": "https://ga.jspm.io/npm:lit-html@2.6.1/lit-html.js",
-          "lit-html/is-server.js": "https://ga.jspm.io/npm:lit-html@2.6.1/is-server.js"
-        }
-      }
-    }
-</script>
+  <title>Frontend Mentor | Testimonials </title>
 
 <link rel="stylesheet" href="./assets/styles/css/styles.css">
 
 </head>
 <body>
-  <div class="container">
-    Daniel Clifford
-    Verified Graduate
-  
-    I received a job offer mid-course, and the subjects I learned were current, if not more so, 
-    in the company I joined. I honestly feel I got every penny’s worth.
-  
-    “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
-    transition and have heard some people who had an amazing experience here. I signed up 
-    for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
-    The next 12 weeks was the best - and most grueling - time of my life. Since completing 
-    the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+  <div class="container" style="font-family: 'Barlow Semi Condensed', sans-serif;">
+    <div style="
+    box-sizing: border-box;
+    width: calc(100% - 3rem); 
+    margin: auto;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: .5rem;
+    padding: 1.5rem 2rem;
+    ">
+      <div style="
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto auto;
+      column-gap: 1rem;
+      ">
+        <img src="./assets/images/image-daniel.jpg" alt=""
+        style="
+        border-radius: 100%;
+        width: 2rem;
+        border: .125rem solid hsl(0, 0%, 81%);
+        grid-row: 1 / span 2;
+        grid-column: 1 / span 1;
+        "
+        >
+        <span style="color: hsl(0, 0%, 100%);">Daniel Clifford</span>
+        <span style="color: hsl(0, 0%, 81%);
+        ">Verified Graduate</span>
+      </div>
+      <div style="
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: hsl(0, 0%, 100%);
+      margin: 1rem 0;
+      ">
+        I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+        in the company I joined. I honestly feel I got every penny’s worth.
+      </div>
+      <p style="
+      margin: 0;
+      color: hsl(0, 0%, 81%);
+      font-weight: 500;
+      line-height: 1.25;
+      ">
+        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+        transition and have heard some people who had an amazing experience here. I signed up 
+        for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+        The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+      </p>
+    </div>
   
     Jonathan Walters
     Verified Graduate
@@ -83,8 +108,5 @@
     100% recommend! ”
 
   </div>
-  <frontendmentor-footer name="Elio Flores" url="https://elioflo.github.io/elioflo/">
-  </frontendmentor-footer>
-  <script src="./assets/scripts/main.js" type="module"></script>
 </body>
 </html>

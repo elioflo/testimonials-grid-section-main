@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"); /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -318,8 +318,78 @@ template {
   --neutral-light-grayish-blue: hsl(210, 46%, 95%);
 }
 
+.text_gray_blue {
+  color: var(--primary-very-dark-grayish-blue);
+}
+
+.text_black_blue {
+  color: var(--primary-very-dark-blackish-blue);
+}
+
+.bg-purple {
+  --bg-color: var(--primary-moderate-violet);
+}
+
+.bg-grey {
+  --bg-color: var(--primary-very-dark-grayish-blue);
+}
+
+.bg-black {
+  --bg-color: var(--primary-very-dark-blackish-blue);
+}
+
+.bg-white {
+  --bg-color: var(--primary-white);
+  box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+}
+
+.text_white {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.text_gray {
+  color: hsl(0deg, 0%, 81%);
+}
+
 .container {
   min-height: 100vh;
+  background-color: var(--neutral-light-grayish-blue);
+  padding: 1.5rem 0;
+}
+
+.card {
+  box-sizing: border-box;
+  width: calc(100% - 3rem);
+  margin: 1.5rem auto;
+  background-color: var(--bg-color);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem 2rem;
+}
+.card__text {
+  margin: 0;
+  color: hsl(0deg, 0%, 81%);
+  font-weight: 500;
+  line-height: 1.25;
+}
+.card__bold_text {
+  margin: 1rem 0;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.author {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 1rem;
+}
+.author__avatar {
+  border-radius: 100%;
+  width: 2rem;
+  border: 0.125rem solid hsl(0deg, 0%, 81%);
+  grid-row: 1/span 2;
+  grid-column: 1/span 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
